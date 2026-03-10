@@ -9,45 +9,36 @@ def menu():
     print("2. View reading list")
     print("3. View summary")
     print("4. Exit")
-  
+
+
+
 
 def add_book():
    pass
 
 def reading_list():
-    pass
+        pass
 
 def summary():
     pass
 
+
+menu()
+
 number = input("Enter choice: ")
 
-
-
-
-
-
-
-
-
-
-while True: 
-
-
-    menu()
-
-    if number == "1":
+if number == "1":
         add_book()
 
-    elif number == "2":
+elif number == "2":
         reading_list()
 
-    elif number == "3":
+elif number == "3":
         summary()
 
-    elif number == "4":
+elif number == "4":
         print("Goodbye!")
 
-    else:
+else:
         print("Invalid choice. Try again.")
-    
+        menu()
