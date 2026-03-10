@@ -1,0 +1,3 @@
+titles = []
+times = []
+statuses = []
