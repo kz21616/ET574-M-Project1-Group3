@@ -1,3 +1,5 @@
+import time
+
 from data import titles, times, statuses
 
 def add_book():
@@ -13,3 +15,13 @@ def add_book():
     statuses.append(status)
 
     print("Book added!")
+
+
+def view_reading_list():
+    if len(titles) == 0:
+        print("No books in the reading list yet.")
+        return
+    print("\nYour Reading List:")    
+    
+    for i in range(len(titles)):
+        print(f"{i+1}, {titles[i]} | {time[i]} minutes | {status[i]}")
