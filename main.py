@@ -1,8 +1,13 @@
 
+<<<<<<< HEAD
 
 title = []
 time = []
 status = []
+=======
+from tracker import add_book, view_reading_list
+
+>>>>>>> 4b7909c (udated file names and added imports from tracker)
 
 def menu():
     print("1. Add Book")
@@ -12,33 +17,30 @@ def menu():
 
 
 
-
-def add_book():
-   pass
-
-def reading_list():
+def summary(): 
         pass
 
-def summary():
-    pass
 
 
-menu()
 
-number = input("Enter choice: ")
 
-if number == "1":
-        add_book()
-
-elif number == "2":
-        reading_list()
-
-elif number == "3":
-        summary()
-
-elif number == "4":
-        print("Goodbye!")
-
-else:
-        print("Invalid choice. Try again.")
+while True:
+        
         menu()
+        number = input("Enter choice: ")
+
+        if number == "1":
+                add_book()
+
+        elif number == "2":
+                view_reading_list()
+
+        elif number == "3":
+                summary()
+
+        elif number == "4":
+                print("Goodbye!")
+                break
+        else:
+                print("Invalid choice. Try again.")
+        
