@@ -1,4 +1,4 @@
-import time
+
 
 from data import titles, times, statuses
 
@@ -16,7 +16,7 @@ def add_book():
 
     print("Book added!")
 
-from data import titles, times, statuses
+
 
 def view_reading_list():
     
