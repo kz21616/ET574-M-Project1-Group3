@@ -8,6 +8,7 @@ def menu():
     print("3. View summary")
     print("4. Exit")
 
+
 while True:
         
         menu()
